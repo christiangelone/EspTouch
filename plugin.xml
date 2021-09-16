@@ -22,8 +22,92 @@
     </config-file>
     <header-file src="src/ios/EspTouch.h"/>
     <source-file src="src/ios/EspTouch.m"/>
-    <source-file src="src/ios/Common"/>
-    <source-file src="src/ios/ESPTouch"/>
+
+    <header-file src="src/ios/Common/AFNetworking/AFCompatibilityMacros.h"/>
+    <header-file src="src/ios/Common/AFNetworking/AFHTTPSessionManager.h"/>
+    <header-file src="src/ios/Common/AFNetworking/AFNetworkReachabilityManager.h"/>
+    <header-file src="src/ios/Common/AFNetworking/AFNetworking.h"/>
+    <header-file src="src/ios/Common/AFNetworking/AFSecurityPolicy.h"/>
+    <header-file src="src/ios/Common/AFNetworking/AFURLRequestSerialization.h"/>
+    <header-file src="src/ios/Common/AFNetworking/AFURLResponseSerialization.h"/>
+    <header-file src="src/ios/Common/AFNetworking/AFURLSessionManager.h"/>
+    
+    <source-file src="src/ios/Common/AFNetworking/AFHTTPSessionManager.m"/>
+    <source-file src="src/ios/Common/AFNetworking/AFNetworkReachabilityManager.m"/>
+    <source-file src="src/ios/Common/AFNetworking/AFSecurityPolicy.m"/>
+    <source-file src="src/ios/Common/AFNetworking/AFURLRequestSerialization.m"/>
+    <source-file src="src/ios/Common/AFNetworking/AFURLResponseSerialization.m"/>
+    <source-file src="src/ios/Common/AFNetworking/AFURLSessionManager.m"/>
+    
+    <header-file src="src/ios/Common/CocoaAsyncSocket/CocoaAsyncSocket.h"/>
+    
+    <header-file src="src/ios/Common/CocoaAsyncSocket/GCD/GCDAsyncSocket.h"/>
+    <header-file src="src/ios/Common/CocoaAsyncSocket/GCD/GCDAsyncUdpSocket.h"/>
+    <source-file src="src/ios/Common/CocoaAsyncSocket/GCD/GCDAsyncSocket.m"/>
+    <source-file src="src/ios/Common/CocoaAsyncSocket/GCD/GCDAsyncUdpSocket.m"/>
+
+    <header-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/DDASLLogger.h"/>
+    <header-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/DDAbstractDatabaseLogger.h"/>
+    <header-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/DDFileLogger.h"/>
+    <header-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/DDLog+LOGV.h"/>
+    <header-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/DDLog.h"/>
+    <header-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/DDTTYLogger.h"/>
+
+    <source-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/DDASLLogger.m"/>
+    <source-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/DDAbstractDatabaseLogger.m"/>
+    <source-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/DDFileLogger.m"/>
+    <source-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/DDLog.m"/>
+    <source-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/DDTTYLogger.m"/>
+
+    <header-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/Extensions/DDContextFilterLogFormatter.h"/>
+    <header-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/Extensions/DDDispatchQueueLogFormatter.h"/>
+    <header-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/Extensions/DDMultiFormatter.h"/>
+
+    <source-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/Extensions/DDContextFilterLogFormatter.m"/>
+    <source-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/Extensions/DDDispatchQueueLogFormatter.m"/>
+    <source-file src="src/ios/Common/CocoaAsyncSocket/Vendor/CocoaLumberjack/Extensions/DDMultiFormatter.m"/>
+
+    <header-file src="src/ios/Common/ESPUtils/ESPAES.h"/>
+    <header-file src="src/ios/Common/ESPUtils/ESPTools.h"/>
+    <header-file src="src/ios/Common/ESPUtils/ESPVersionMacro.h"/>
+    <header-file src="src/ios/Common/ESPUtils/ESP_ByteUtil.h"/>
+    <header-file src="src/ios/Common/ESPUtils/ESP_CRC8.h"/>
+    <header-file src="src/ios/Common/ESPUtils/ESP_NetUtil.h"/>
+    <header-file src="src/ios/Common/ESPUtils/ESP_WifiUtil.h"/>
+
+    <source-file src="src/ios/Common/ESPUtils/ESPAES.m"/>
+    <source-file src="src/ios/Common/ESPUtils/ESPTools.m"/>
+    <source-file src="src/ios/Common/ESPUtils/ESP_ByteUtil.m"/>
+    <source-file src="src/ios/Common/ESPUtils/ESP_CRC8.m"/>
+    <source-file src="src/ios/Common/ESPUtils/ESP_NetUtil.m"/>
+    <source-file src="src/ios/Common/ESPUtils/ESP_WifiUtil.m"/>
+
+    <header-file src="src/ios/ESPTouch/esptouch/ESPTouchDelegate.h"/>
+    <header-file src="src/ios/ESPTouch/esptouch/ESPTouchResult.h"/>
+    <header-file src="src/ios/ESPTouch/esptouch/ESPTouchTask.h"/>
+
+    <source-file src="src/ios/ESPTouch/task/ESPTouchResult.m"/>
+    <source-file src="src/ios/ESPTouch/task/ESPTouchTask.m"/>
+
+    <header-file src="src/ios/ESPTouch/task/ESPTouchTaskParameter.h"/>
+    <source-file src="src/ios/ESPTouch/task/ESPTouchTaskParameter.m"/>
+
+    <header-file src="src/ios/ESPTouch/udp/ESPUDPSocketClient.h"/>
+    <header-file src="src/ios/ESPTouch/udp/ESPUDPSocketServer.h"/>
+
+    <source-file src="src/ios/ESPTouch/udp/ESPUDPSocketClient.m"/>
+    <source-file src="src/ios/ESPTouch/udp/ESPUDPSocketServer.m"/>
+
+    <header-file src="src/ios/ESPTouch/protocol/ESPDataCode.h"/>
+    <header-file src="src/ios/ESPTouch/protocol/ESPDatumCode.h"/>
+    <header-file src="src/ios/ESPTouch/protocol/ESPGuideCode.h"/>
+    <header-file src="src/ios/ESPTouch/protocol/ESPTouchGenerator.h"/>
+
+    <source-file src="src/ios/ESPTouch/protocol/ESPDataCode.m"/>
+    <source-file src="src/ios/ESPTouch/protocol/ESPDatumCode.m"/>
+    <source-file src="src/ios/ESPTouch/protocol/ESPGuideCode.m"/>
+    <source-file src="src/ios/ESPTouch/protocol/ESPTouchGenerator.m"/>
+
     <framework src="CoreGraphics.framework" />
     <framework src="UIKit.framework" />
     <framework src="Foundation.framework" />

@@ -1,0 +1,19 @@
+{
+  "name": "cordova-esptouch",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "cordova-esptouch",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Christian L. Angelone",
+  "license": "MIT"
+}

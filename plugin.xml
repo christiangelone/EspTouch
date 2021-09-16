@@ -2,7 +2,7 @@
 <plugin id="cordova-esptouch" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
   <name>EspTouch</name>
   <js-module name="EspTouch" src="www/EspTouch.js">
-    <clobbers target="cordova.plugins.EspTouch" />
+    <clobbers target="EspTouch" />
   </js-module>
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">

@@ -21,7 +21,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class esptouch extends CordovaPlugin {
+public class EspTouch extends CordovaPlugin {
   private IEsptouchTask mEsptouchTask;
   private CallbackContext esptouchCallbackContext;
   private final Object mLock = new Object();

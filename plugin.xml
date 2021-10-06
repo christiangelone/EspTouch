@@ -11,8 +11,36 @@
       </feature>
     </config-file>
     <config-file parent="/*" target="AndroidManifest.xml" />
-    <source-file src="src/android/EspTouch.java" target-dir="src/com/nexttecnology/cordova" />
-    <source-file src="src/android/com/espressif/iot/esptouch" target-dir="src/com/espressif/iot/esptouch" />
+    <source-file src="src/android/com/nexttecnology/cordova/EspTouch.java" target-dir="src/com/nexttecnology/cordova" />
+    
+    <source-file src="src/android/com/espressif/iot/esptouch/EsptouchResult.java" target-dir="src/com/espressif/iot/esptouch" />
+    <source-file src="src/android/com/espressif/iot/esptouch/EsptouchTask.java" target-dir="src/com/espressif/iot/esptouch" />
+    <source-file src="src/android/com/espressif/iot/esptouch/IEsptouchListener.java" target-dir="src/com/espressif/iot/esptouch" />
+    <source-file src="src/android/com/espressif/iot/esptouch/IEsptouchResult.java" target-dir="src/com/espressif/iot/esptouch" />
+    <source-file src="src/android/com/espressif/iot/esptouch/IEsptouchTask.java" target-dir="src/com/espressif/iot/esptouch" />
+  
+    <source-file src="src/android/com/espressif/iot/esptouch/util/ByteUtil.java" target-dir="src/com/espressif/iot/esptouch/util" />
+    <source-file src="src/android/com/espressif/iot/esptouch/util/CRC8.java" target-dir="src/com/espressif/iot/esptouch/util" />
+    <source-file src="src/android/com/espressif/iot/esptouch/util/TouchNetUtil.java" target-dir="src/com/espressif/iot/esptouch/util" />
+
+    <source-file src="src/android/com/espressif/iot/esptouch/udp/UDPSocketClient.java" target-dir="src/com/espressif/iot/esptouch/udp" />
+    <source-file src="src/android/com/espressif/iot/esptouch/udp/UDPSocketServer.java" target-dir="src/com/espressif/iot/esptouch/udp" />
+  
+    <source-file src="src/android/com/espressif/iot/esptouch/task/__EsptouchTask.java" target-dir="src/com/espressif/iot/esptouch/task" />
+    <source-file src="src/android/com/espressif/iot/esptouch/task/__IEsptouchTask.java" target-dir="src/com/espressif/iot/esptouch/task" />
+    <source-file src="src/android/com/espressif/iot/esptouch/task/EsptouchTaskParameter.java" target-dir="src/com/espressif/iot/esptouch/task" />
+    <source-file src="src/android/com/espressif/iot/esptouch/task/ICodeData.java" target-dir="src/com/espressif/iot/esptouch/task" />
+    <source-file src="src/android/com/espressif/iot/esptouch/task/IEsptouchGenerator.java" target-dir="src/com/espressif/iot/esptouch/task" />
+    <source-file src="src/android/com/espressif/iot/esptouch/task/IEsptouchTaskParameter.java" target-dir="src/com/espressif/iot/esptouch/task" />
+
+    <source-file src="src/android/com/espressif/iot/esptouch/security/ITouchEncryptor.java" target-dir="src/com/espressif/iot/esptouch/security" />
+    <source-file src="src/android/com/espressif/iot/esptouch/security/TouchAES.java" target-dir="src/com/espressif/iot/esptouch/security" />
+
+    <source-file src="src/android/com/espressif/iot/esptouch/protocol/DataCode.java" target-dir="src/com/espressif/iot/esptouch/protocol" />
+    <source-file src="src/android/com/espressif/iot/esptouch/protocol/DatumCode.java" target-dir="src/com/espressif/iot/esptouch/protocol" />
+    <source-file src="src/android/com/espressif/iot/esptouch/protocol/EsptouchGenerator.java" target-dir="src/com/espressif/iot/esptouch/protocol" />
+    <source-file src="src/android/com/espressif/iot/esptouch/protocol/GuideCode.java" target-dir="src/com/espressif/iot/esptouch/protocol" />
+    <source-file src="src/android/com/espressif/iot/esptouch/protocol/TouchData.java" target-dir="src/com/espressif/iot/esptouch/protocol" />
   </platform>
   <platform name="ios">
     <config-file parent="/*" target="config.xml">

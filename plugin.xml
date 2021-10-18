@@ -1,16 +1,26 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova-esptouch" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
   <name>EspTouch</name>
+
   <js-module name="EspTouch" src="www/EspTouch.js">
     <clobbers target="EspTouch" />
   </js-module>
+
   <platform name="android">
+    <config-file parent="/*" target="AndroidManifest.xml">
+      <uses-permission android:name="android.permission.INTERNET" />
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+      <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    </config-file>
+
     <config-file parent="/*" target="res/xml/config.xml">
       <feature name="EspTouch">
-        <param name="android-package" value="com.nexttecnology.cordova" />
+        <param name="android-package" value="com.nexttecnology.cordova.EspTouch" />
+        <param name="onload" value="true" />
       </feature>
     </config-file>
-    <config-file parent="/*" target="AndroidManifest.xml" />
+
     <source-file src="src/android/com/nexttecnology/cordova/EspTouch.java" target-dir="src/com/nexttecnology/cordova" />
     
     <source-file src="src/android/com/espressif/iot/esptouch/EsptouchResult.java" target-dir="src/com/espressif/iot/esptouch" />
